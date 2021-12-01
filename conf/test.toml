@@ -1,0 +1,12 @@
+[log]
+LOG_LEVEL = "INFO"
+LOG_PATH = "/home/logs/x-test.log"
+
+[service]
+# schema swagger
+INCLUDE_IN_SCHEMA = true
+SOCKET_IO_ON = true
+
+[socket_io]
+SOCKET_IO_NAMESPACES = ["/message"]
+SOCKET_IO_MOUNT = "/"

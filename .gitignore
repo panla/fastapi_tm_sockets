@@ -1,0 +1,15 @@
+
+/.idea/
+/.vscode/
+
+/tmp/
+/logs/
+*/__pycache__
+
+/conf/product.local.toml
+/conf/test.local.toml
+
+*.sqlite
+*.pyc
+
+/docker-entrypoint.sh
