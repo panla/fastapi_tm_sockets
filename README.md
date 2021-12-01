@@ -27,7 +27,7 @@ docker-compose.yaml
 conf/
     sockets/
         product.local.toml
-ftm_sockets/
+fastapi_sockets/
     conf/
         product.local.toml
         test.local.toml
