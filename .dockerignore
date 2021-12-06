@@ -1,5 +1,13 @@
-/.vscode/
-/.idea/
+.git
+.vscode
+.idea
+.svn
 
-/logs/
-/tmp/
+venv
+.venv
+
+tmp
+logs
+docs
+
+**/__pycache__
