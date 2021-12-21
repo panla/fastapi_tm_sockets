@@ -1,9 +1,9 @@
 asgiref==3.4.1
 bidict==0.21.4
 certifi==2021.10.8
-charset-normalizer==2.0.8
+charset-normalizer==2.0.9
 click==8.0.3
-Cython==0.29.24
+Cython==0.29.26
 fastapi==0.68.2
 h11==0.12.0
 httptools==0.3.0
@@ -19,5 +19,5 @@ typing_extensions==4.0.0
 urllib3==1.26.7
 uvicorn==0.15.0
 uvloop==0.16.0
-websocket-client==1.2.1
+websocket-client==1.2.3
 websockets==10.1
