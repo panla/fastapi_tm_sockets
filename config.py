@@ -5,16 +5,16 @@ from functools import lru_cache
 import pytomlpp
 from pydantic import BaseModel
 
-from conf.settings import LogConfig, ServiceConfig, SocketIOConfig
+from conf.settings import LogSetting, ServiceSetting, SocketIOSetting
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 class Setting(BaseModel):
-    log: LogConfig
-    service: ServiceConfig
-    socket_io: SocketIOConfig
+    log: LogSetting
+    service: ServiceSetting
+    socket_io: SocketIOSetting
 
 
 @lru_cache()
@@ -34,3 +34,7 @@ def get_settings() -> Setting:
 
 
 Config = get_settings()
+
+LogConfig = Config.log
+ServiceConfig = Config.service
+SocketIOConfig = Config.socket_io
