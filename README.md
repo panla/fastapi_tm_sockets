@@ -9,6 +9,13 @@ Socket.IO module
 - FastAPI
 - python-socketio
 
+## tags
+
+- *asyncio*
+- *fastapi* <https://github.com/tiangolo/fastapi>
+- *socket.io* <https://github.com/miguelgrinberg/python-socketio>
+- *websockets*
+
 ## 配置文件
 
 ```text
