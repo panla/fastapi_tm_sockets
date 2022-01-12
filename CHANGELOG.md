@@ -13,4 +13,5 @@ require package
 
 update/optimize
 
-- config
+- update config
+- update response schema, error schema, exception, middleware, extensions

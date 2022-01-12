@@ -1,16 +1,16 @@
 __all__ = ['logger']
 
-import os
 import sys
+from pathlib import Path
 
 from loguru import logger
 
-from config import Config
+from config import LogConfig
 
-LOG_LEVEL = Config.log.LOG_LEVEL
-LOG_PATH = Config.log.LOG_PATH
+LOG_LEVEL = LogConfig.LOG_LEVEL
+LOG_PATH = LogConfig.LOG_PATH
 
-os.makedirs(os.path.dirname(os.path.abspath(LOG_PATH)), exist_ok=True)
+Path(LOG_PATH).parent.mkdir(exist_ok=True)
 
 logger.remove()
 

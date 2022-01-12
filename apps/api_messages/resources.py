@@ -1,19 +1,17 @@
 from fastapi import APIRouter
 
-from extensions import Route, error_response, resp_success, SocketDefine
+from extensions import Route, ErrorSchema
+from conf.const import SocketConst
 from apps.api_messages.entities import MyEventMessageParser, MyEventSchema
 from sockets.server import socket_io
 
-router = APIRouter(route_class=Route, responses=error_response)
+router = APIRouter(route_class=Route, responses=ErrorSchema)
 
 
 @router.post('/my_event', response_model=MyEventSchema, status_code=201)
 async def send_my_event_message(parser: MyEventMessageParser):
 
-    params = parser.dict()
+    room = parser.room
+    await socket_io.emit(event=SocketConst.EVENT, data=parser.dict(), room=f'{room}', namespace=SocketConst.NAMESPACE)
 
-    room = params.get('room')
-
-    await socket_io.emit(event=SocketDefine.event, data=params, room=f'{room}', namespace=SocketDefine.namespace)
-
-    return resp_success(data=True)
+    return MyEventSchema(data=True)
