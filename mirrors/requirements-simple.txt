@@ -1,10 +1,10 @@
 Cython==0.29.26
-fastapi==0.68.2
+fastapi==0.72.0
 httptools==0.3.0
 loguru==0.5.3
-python-engineio==4.3.0
-python-socketio==5.5.0
-pytomlpp==1.0.9
-uvicorn==0.15.0
+python-engineio==4.3.1
+python-socketio==5.5.1
+pytomlpp==1.0.19
+uvicorn==0.17.0
 uvloop==0.16.0
 websockets==10.1
