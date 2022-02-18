@@ -3,7 +3,6 @@ services:
   sockets:
     container_name: fastapi_sockets
     build: ./fastapi_sockets
-    restart: always
     environment:
       TZ: Asia/Shanghai
     command: /bin/bash ./docker-entrypoint.sh
@@ -12,9 +11,9 @@ services:
       - ./conf/sockets/product.local.toml:/home/project/conf/product.local.toml
       - ./logs/sockets:/home/logs
     networks:
-      fastapi_tm_net:
-        ipv4_address: "172.22.0.5"
+      dev_net:
+        ipv4_address: "172.20.5.13"
 
 networks:
-  fastapi_tm_net:
+  dev_net:
       external: true

@@ -30,14 +30,14 @@ docker-entrypoint.sh
 ```
 
 ```text
-docker-compose.yaml
-conf/
-    sockets/
-        product.local.toml
-fastapi_sockets/
-    conf/
-        product.local.toml
-        test.local.toml
-logs/
-    sockets/
+.
+├── fastapi_sockets
+├── conf
+│   └── sockets
+│       └── product.local.toml
+├── docker-compose.yml
+└── logs
+    └── sockets
+        ├── x.log
+        └── x-test.log
 ```

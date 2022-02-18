@@ -19,6 +19,14 @@ class StatusCode(object):
     unknown_error = 45001
 
 
+class PaginateConst:
+    DefaultNum = 1
+    DefaultSize = 10
+
+    MinNum = 1
+    MaxSize = 40
+
+
 class SocketConst:
 
     EVENT = 'my_event'
