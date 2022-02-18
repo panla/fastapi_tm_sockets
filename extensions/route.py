@@ -18,7 +18,7 @@ class Route(APIRoute):
             logger.info(f'{request.method} {request.url}')
 
             methods = ['POST', 'PUT', 'PATCH']
-            content_type = request.headers.get('content-type')
+            content_type = request.headers.get('content-type', '')
 
             if request.method in methods and 'application/json' in content_type:
                 try:
