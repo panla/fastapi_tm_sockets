@@ -4,6 +4,18 @@
 
 ## 0.1
 
+## 0.2.0
+
+require packages
+
+- upgrade requirement
+  - Cython==0.29.28
+  - fastapi==0.74.1
+  - httptools==0.4.0
+  - loguru==0.6.0
+  - python-socketio==5.5.2
+  - uvicorn==0.17.5
+
 ## 0.1.0
 
 require package
