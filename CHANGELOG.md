@@ -2,9 +2,17 @@
 
 [toc]
 
-## 0.1
+## 0.x
 
-## 0.2.0
+### 0.2.1
+
+require packages
+
+- upgrade requirement
+  - fastapi==0.75.0
+  - uvicorn==0.17.6
+
+### 0.2.0
 
 require packages
 
@@ -16,7 +24,7 @@ require packages
   - python-socketio==5.5.2
   - uvicorn==0.17.5
 
-## 0.1.0
+### 0.1.0
 
 require package
 

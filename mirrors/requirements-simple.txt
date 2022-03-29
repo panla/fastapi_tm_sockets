@@ -1,6 +1,6 @@
 ## web
-fastapi==0.74.1
-uvicorn==0.17.5
+fastapi==0.75.0
+uvicorn==0.17.6
 
 ## speed
 Cython==0.29.28
