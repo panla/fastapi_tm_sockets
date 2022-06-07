@@ -1,9 +1,9 @@
 ## web
-fastapi==0.75.0
+fastapi==0.78.0
 uvicorn==0.17.6
 
 ## speed
-Cython==0.29.28
+Cython==0.29.30
 httptools==0.4.0
 uvloop==0.16.0
 
@@ -11,9 +11,9 @@ uvloop==0.16.0
 loguru==0.6.0
 
 ## TOML parse
-pytomlpp==1.0.10
+pytomlpp==1.0.11
 
 ## socket.io
-python-engineio==4.3.1
-python-socketio==5.5.2
-websockets==10.1
+python-engineio==4.3.2
+python-socketio==5.6.0
+websockets==10.3

@@ -2,18 +2,19 @@ version: "3.9"
 services:
 
   sockets:
-    image: fastapi_sockets:latest
-    container_name: fastapi_sockets
-    build: ./fastapi_sockets
-    command: /bin/bash ./docker-entrypoint.sh
+    image: fastapi_tm_sockets:latest
+    container_name: fastapi_tm_sockets
+    build: ./fastapi_tm_sockets
+    command: ["/bin/bash", "./docker-entrypoint.sh"]
+    restart: always
     networks:
       dev_net:
         ipv4_address: "172.20.5.13"
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./fastapi_sockets:/home/project
-      - ./conf/sockets/product.local.toml:/home/project/conf/product.local.toml
-      - ./logs/sockets:/home/logs
+      - ./fastapi_tm_sockets:/home/project
+      - ./conf/fastapi_tm_sockets/product.local.toml:/home/project/conf/product.local.toml
+      - ./logs/fastapi_tm_sockets:/home/logs
 
 networks:
   dev_net:

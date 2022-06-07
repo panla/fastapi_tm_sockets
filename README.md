@@ -4,7 +4,7 @@ Socket.IO module
 
 ## ENV
 
-- Python 3.8.12
+- Python 3.9
 - Cython
 - FastAPI
 - python-socketio
@@ -31,13 +31,13 @@ docker-entrypoint.sh
 
 ```text
 .
-├── fastapi_sockets
+├── fastapi_tm_sockets
 ├── conf
-│   └── sockets
+│   └── fastapi_tm_sockets
 │       └── product.local.toml
 ├── docker-compose.yml
 └── logs
-    └── sockets
+    └── fastapi_tm_sockets
         ├── x.log
         └── x-test.log
 ```
