@@ -2,7 +2,19 @@
 
 [toc]
 
-## 0.x
+## 0.2
+
+### 0.2.2
+
+require packages
+
+- upgrade requirement
+  - fastapi==0.78.0
+  - Cython==0.29.30
+  - pytomlpp==1.0.11
+  - python-engineio==4.3.2
+  - python-socketio==5.6.0
+  - websockets==10.3
 
 ### 0.2.1
 
