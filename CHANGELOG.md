@@ -4,6 +4,12 @@
 
 ## 0.2
 
+### 0.2.3
+
+update/optimize
+
+- upgrade image from python:3.9-slim-buster to python:3.9-slim-bullseye
+
 ### 0.2.2
 
 require packages
