@@ -9,6 +9,16 @@
 - deploy
   - update Dockerfile remove install gcc
 
+- requirements
+  - upgrade fastapi from 0.78.0 to 0.85.0
+  - upgrade httptools from 0.4.0 to 0.5.0
+  - upgrade pydantic from 1.9.1 to 1.10.2
+  - upgrade starlette from 0.19.1 to 0.20.4
+  - upgrade uvicorn from 0.18.2 to 0.18.3
+  - upgrade uvloop from 0.16.0 to 0.17.0
+  - upgrade upython-engineio from 4.3.2 to 4.3.4
+  - upgrade upython-socketio from 5.6.0 to 5.7.1
+
 ### 0.2.3
 
 update/optimize
