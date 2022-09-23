@@ -6,6 +6,9 @@
 
 ### 0.2.4
 
+- update/optimize
+  - update log config
+
 - deploy
   - update Dockerfile remove install gcc
 

@@ -1,6 +1,9 @@
 [log]
-LOG_LEVEL = "INFO"
-LOG_PATH = "/home/logs/x-test.log"
+LEVEL = "INFO"
+PATH = "/home/logs/x-test.log"
+STDOUT = true
+ROTATION = "00:00"
+RETENTION = "30 days"
 
 [service]
 # schema swagger
